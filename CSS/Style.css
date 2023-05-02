@@ -1,0 +1,161 @@
+
+:root{
+    --bordes:#000919dc;
+    --Principal:#021c32;
+    --textoinput:#fff;
+}
+*{
+    margin:0%;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background:url(https://i.pinimg.com/originals/a3/52/7d/a3527dda8bc549e3ab565beefa9d938f.jpg)no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.form-contenido{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 1px solid var(--bordes);
+    border-radius: 10px;
+    /*La siguiente linea es la que hace el efecto de borroso como vidrio*/
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+h2{
+    font-size: 30px;
+    color: var(--texto_Principal);
+    margin-left: 100px;
+    font-family: cursive;
+}
+.inputs{
+    position:relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid var(--Principal);
+}
+.inputs label{
+    position: absolute;
+    top:50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: var(--texto_Principal);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .3s;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top:5px;
+}
+.inputs input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border:none;
+    outline: none;
+    font-size: 15px;
+    font-family: cursive;
+    padding: 0 35px 0 5px;
+    color: var(--textoinput);
+}
+/*ICONOS*/
+.inputs ion-icon{
+    position: absolute;
+    right: 8px;
+    color: var(--Principal);
+    font-size: 22px;
+    top:20px;
+}
+.Forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+}
+.Forget label input{
+    margin-right: 3px;
+}
+.Forget label{
+    color:var(--Principal);
+    text-decoration: none;
+}
+/*Botonnnn*/
+button{
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    background:var(--Principal);
+    letter-spacing: 0.20em;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: rgba(5, 1, 31, 0.374) 0px 1px 20px 4px;
+}
+button:hover{
+    background: #021c32;
+    box-shadow: 0 0 5px #00869b,
+    0 0 5px #021c32,
+    0 0 5px #021c32;
+}
+/*Recuperar cuenta*/
+.Recuperar a{
+    font-size: .9em;
+    color:var(--Principal);
+    text-align: center;
+    margin-left: 90px;
+    text-decoration: none;
+}
+.Recuperar a:hover{
+    text-decoration:underline;
+}
+/*REGISTRAMEEEE*/
+.Registrar{
+    font-size: .9em;
+    color:var(--Principal);
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.Registrar a{
+    text-decoration: none;
+    color: var(--Principal);
+    font-weight: 500;
+}
+.Registrar a:hover{
+    text-decoration: underline;
+}
+#chequecitoo{
+    appearance: none;
+    cursor: pointer;
+    margin-right: 6px;
+    background-color: #042c50;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    border: 1.7px solid var(--Principal);
+}
+#chequecitoo:hover{
+    border: 1.7px solid #00869b;
+}
+/*Cuando esta Checkeadooo*/
+#chequecitoo:checked {
+  background-color: rgb(7, 186, 231);
+}
