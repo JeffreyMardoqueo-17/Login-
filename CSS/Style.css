@@ -1,25 +1,34 @@
+:root {
+    --bordes: #000919dc;
+    --Principal: #021c32;
+    --textoinput: blue;
+}
 
-:root{
-    --bordes:#000919dc;
-    --Principal:#021c32;
-    --textoinput:#fff;
-}
-*{
-    margin:0%;
+* {
+    margin: 0%;
     padding: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background:url('../IMG/bacgg.jpg')no-repeat;
+    /* background:url('../IMG/bacgg.jpg')no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 100%; */
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #c8c8c8);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #b5b1b1);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
-.form-contenido{
+
+.form-contenido {
     position: relative;
     width: 400px;
     height: 450px;
@@ -33,21 +42,24 @@ body{
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-h2{
+
+h2 {
     font-size: 30px;
     color: var(--texto_Principal);
     margin-left: 100px;
     font-family: cursive;
 }
-.inputs{
-    position:relative;
+
+.inputs {
+    position: relative;
     margin: 30px 0;
     width: 310px;
     border-bottom: 2px solid var(--Principal);
 }
-.inputs label{
+
+.inputs label {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 5px;
     transform: translateY(-50%);
     color: var(--texto_Principal);
@@ -55,49 +67,56 @@ h2{
     pointer-events: none;
     transition: .3s;
 }
-input:focus ~ label,
-input:valid ~ label{
-    top:5px;
+
+input:focus~label,
+input:valid~label {
+    top: 5px;
 }
-.inputs input{
+
+.inputs input {
     width: 100%;
     height: 50px;
     background: transparent;
-    border:none;
+    border: none;
     outline: none;
     font-size: 15px;
     font-family: cursive;
     padding: 0 35px 0 5px;
     color: var(--textoinput);
 }
+
 /*ICONOS*/
-.inputs ion-icon{
+.inputs ion-icon {
     position: absolute;
     right: 8px;
     color: var(--Principal);
     font-size: 22px;
-    top:20px;
+    top: 20px;
 }
-.Forget{
+
+.Forget {
     margin: -15px 0 15px;
     font-size: .9em;
-    color:#fff;
+    color: #fff;
     display: flex;
     justify-content: center;
 }
-.Forget label input{
+
+.Forget label input {
     margin-right: 3px;
 }
-.Forget label{
-    color:var(--Principal);
+
+.Forget label {
+    color: var(--Principal);
     text-decoration: none;
 }
+
 /*Botonnnn*/
-button{
+button {
     width: 100%;
     height: 35px;
     border-radius: 10px;
-    background:var(--Principal);
+    background: var(--Principal);
     letter-spacing: 0.20em;
     color: #fff;
     border: none;
@@ -109,40 +128,47 @@ button{
     margin-bottom: 30px;
     box-shadow: rgba(5, 1, 31, 0.374) 0px 1px 20px 4px;
 }
-button:hover{
+
+button:hover {
     background: #021c32;
     box-shadow: 0 0 5px #00869b,
-    0 0 5px #021c32,
-    0 0 5px #021c32;
+        0 0 5px #021c32,
+        0 0 5px #021c32;
 }
+
 /*Recuperar cuenta*/
-.Recuperar a{
+.Recuperar a {
     font-size: .9em;
-    color:var(--Principal);
+    color: var(--Principal);
     text-align: center;
     margin-left: 90px;
     text-decoration: none;
 }
-.Recuperar a:hover{
-    text-decoration:underline;
+
+.Recuperar a:hover {
+    text-decoration: underline;
 }
+
 /*REGISTRAMEEEE*/
-.Registrar{
+.Registrar {
     font-size: .9em;
-    color:var(--Principal);
+    color: var(--Principal);
     text-align: center;
     margin-top: 10px;
     margin-left: 15px;
 }
-.Registrar a{
+
+.Registrar a {
     text-decoration: none;
     color: var(--Principal);
     font-weight: 500;
 }
-.Registrar a:hover{
+
+.Registrar a:hover {
     text-decoration: underline;
 }
-#chequecitoo{
+
+#chequecitoo {
     appearance: none;
     cursor: pointer;
     margin-right: 6px;
@@ -152,10 +178,12 @@ button:hover{
     border-radius: 50px;
     border: 1.7px solid var(--Principal);
 }
-#chequecitoo:hover{
+
+#chequecitoo:hover {
     border: 1.7px solid #00869b;
 }
+
 /*Cuando esta Checkeadooo*/
 #chequecitoo:checked {
-background-color: rgb(7, 186, 231);
+    background-color: rgb(7, 186, 231);
 }
